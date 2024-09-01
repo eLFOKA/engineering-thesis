@@ -1,0 +1,54 @@
+from PyQt5 import QtWidgets, QtCore, QtGui
+from language_tool_python import LanguageTool
+import sys
+import os
+
+
+
+class Model():
+    def __init__(self, MainWindow):
+        self.a = ""
+        self.MainWindow = MainWindow
+
+
+    def testowaFunkcjaModel(self):
+        print("testowaFunkcjaZmodelu")
+        self.MainWindow.testowaFunkcjaWindow()
+
+
+
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.model = Model(self)
+
+
+
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle("SASPI")
+        self.setGeometry(100, 100, 800, 600)
+
+        self.show()
+
+        self.model.testowaFunkcjaModel()
+
+
+    def testowaFunkcjaWindow(self):
+        print("testowaFunkcjaZmainWindow")
+
+
+
+
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
+
+    window = MainWindow()
+    window.show()
+
+
+
+    app.exec_()

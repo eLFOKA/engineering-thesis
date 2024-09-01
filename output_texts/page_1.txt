@@ -1,0 +1,40 @@
+ 
+9 
+Zadanie domowe nr 2 
+ 
+Dla układu wzmacniacza z zadania domowego nr 1, zakładając obliczone wcześniej dokładne wartości 
+punktu pracy, zakładając wartość potencjału termicznego równą 25[mV] oraz pomijając rezystancje 
+wyjściowe tranzystorów należy: 
+a) obliczyć wartości parametrów zastępczych modeli małosygnałowych tranzystorów, 
+b) narysować schemat zastępczy małosygnałowy układu dla środka pasma częstotliwościowego, 
+c) obliczyć wartości rezystancji wejściowej, wyjściowej oraz wzmocnienia dla poszczególnych stopni 
+wzmacniających jak i dla całego wzmacniacza, 
+d) podać warunek małosygałowości (inaczej liniowości) wzmacniacza. 
+ 
+ 
+Rozwiązanie: 
+a) Wartości parametrów małosygnałowych modeli zastępczych Q1 i Q2. 
+W rozwiązaniu zadania zastosowano modele typu T i tak wartości rezystancji emiterowych będą więc 
+równe: 
+𝑟𝑒1 = 𝑉𝑇
+𝐼𝐸1
+=
+25[𝑚𝑉]
+0,9259[𝑚𝐴] = 27[Ω] 
+ 
+𝑟𝑒2 = 𝑉𝑇
+𝐼𝐸2
+=
+25[𝑚𝑉]
+0,8438[𝑚𝐴] = 29,63[Ω] 
+ 
+b) Schemat zastępczy małosygnałowy układu dla środka pasma częstotliwościowego. 
+ 
+Rys. zd_2a. Schemat zastępczy małosygnałowy wzmacniacza. 
+c) Wartość rezystancji wejściowej, wyjściowej oraz wzmocnienia dla poszczególnych stopni 
+wzmacniających jak i dla całego wzmacniacza. 
+𝑅𝐼𝑁= 𝑅1𝑏||𝑅2||[(𝛽+ 1)(𝑟𝑒1 + 𝑅𝑒1)] = 40[𝑘Ω]||40[𝑘Ω]||[101 ∙(100[Ω] + 27[Ω])] = 
+= 20[𝑘Ω]||12,827[𝑘Ω] = 7,815[𝑘Ω] 
+ 
+𝑅𝐼2 = (𝛽+ 1)(𝑟𝑒2 + 𝑅𝑒3) = 101 ∙(1000[Ω] + 29,63[Ω]) = 104[kΩ] 
+𝑅𝑂𝑈𝑇= 𝑅𝐶3 = 8[kΩ] 
