@@ -2,11 +2,18 @@
 
 %%%%%%%%%Miejsce na dodatkowe pakiety%%%%%%%%%%%%%
 \usepackage{subcaption}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
 
 \begin{document}
 
-%\includepdf[page={1}]{StronaTytulowa.pdf}
+
+\includepdf[page=1]{StronaTytułowa.pdf}
 %\includepdf[page={1}]{Oswiadczenie.pdf}
+
+
 \setcounter{page}{3}
 
 \include{Abstrakt_pl}
@@ -18,8 +25,9 @@
 \include{Symbole}
 \include{Oznaczenia}
 
-\include{Rozdzial1}
+\include{Rozdzial1}1
 \include{Rozdzial2}
+\include{Rozdzial3}
 % tu będą kolejne rozdziały
 
 \listoffigures
@@ -30,10 +38,8 @@
 
 %alternatywa - bibtex
 \begin{thebibliography}{20}
-\bibitem{Kow02} Kowalski J., Kabacki J.: Simulation of Network Systems in Education, Proceedings of the XXIV Autumn International Colloquium Advanced Simulation of Systems. ASIS 2002, 9-11 września 2002, Ostrava, Czechy, s. 213-218.
-\bibitem{Nat12}	National Center of Biotechnology Information, http://www.ncbi.nlm.nih.gov (data dostępu 20.12.2012 r.).
-\bibitem{Now02}	Nowak K.: Dydaktyczny model łączenia sieci LAN za pomocą sieci rozległych. Projekt dyplomowy inżynierski. WETI PG, 2002.
-\bibitem{Bar04}	Barzykowski J. i inni: Współczesna metrologia – zagadnienia wybrane. WNT, Warszawa 2004, s. 575.
+\bibitem{koltovskaia} Koltovskaia, S. (2020). Student engagement with automated written corrective feedback (AWCF) provided by Grammarly: A multiple case study. Assesing Writing, 44, 100450.Habibzadeh, F..
+\bibitem{GPTzeroPer} (2023). GPTZero performance in identifying artificial intelligence-generated medical texts: a preliminary study. Journal of Korean Medical Science, 38(38).
 \end{thebibliography}
 
 %*****************
