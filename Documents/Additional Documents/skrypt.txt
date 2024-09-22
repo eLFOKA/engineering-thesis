@@ -1,0 +1,38 @@
+Zamysł ogólny:
+Z tego co rozumiem, mam zrobić program dla studenta, który aktualnie piszę sobie inżynierkie i ma takie narzędzie,
+które pozwoli mu sprawdzić jak dobrze mu idzie pisanie tej pracy, plus dodatkowo podpowie gdzie mógłby poprawić pewne kwestie.
+(kwestie które wypisał Pan w opisie inżynierki, ortografia, podpisy, itp), czyli takie grammarly na sterydach.
+
+Mój koncept jak bym to wykonał:
+Szkielet w PyQT5, dwie klasy (window i engine), komunikują się z sobą, jedna tylko GUI i komunikacja z użytkownikiem,
+druga to cały mechanizm sprawdzania. Wszyskie te kwestie opisane do sprawdzenia rozbiłbym sobie na osobne skrypty, i poprostu
+przepuszczał rozłożony plik PDF (biblioteka PyMuPDF do rozbicia, i potem inteligetnie posegregować teksty, obrazki itp) 
+przez nie, aby na końcu zliczyć wszystkie blędy i dać ogólny score. 
+
+z innych dodatków i tych kwestii:
+- AI detect, mam API od zeroGPT
+- sprawdzanie czy podpisy są w odpowiednich miejscach, czy są poprawne, algorytmicznie samemu, mam pomysł na to
+- co do dataset, mam parę prac inżynierskich od starszych kolegów. Użyje je do testów i sprawdzenia jak to działa.
+- feedback, myślę nad czymś prostym czyli: 1) w GUI konsola tekstowa która mówi jakie są wykonywane procedury przez program.
+2) output plik (np txt) z spisem wszystkich błędów itp (jak to będzie jedna konfiguracja można by dodać wczytywanie poprzednich
+plików i porównywanie wyników, czyli takie porównanie z poprzednimi wersjami pracy, i jak komu dobrze idzie pisanie)
+3) nie chce zbytnio ingereować w sam plik PDF pod względem zmieniania go dlatego kierowałbym się w tym przypadku tylko
+zaznaczaniem na inny kolor tekst która podlega poprawie (np na żółto jak zeroGPT stwierdzi że AI go pisał, a na czerwono
+jak jest błąd składniowy, ortograficzny itp)
+- sprawdzanie ortografi, testowałem languageTool, myślę że działa okej. grammarly ma ten problem że nie rozumie polskiego
+języka. Z tego co mi przynajmniej wiadmo. A chciałbym jedynie badać pracę w języku polskim (+ oczywiście fragmenty nazw angielskie itp)
+
+
+W temacie pracy dyplomowej. 
+Napisałem dwa rozdziały (tą podstawę na ten semestr), myślę że w następnych rozdziałach mógłbym wypisać jak działa szkielet,
+schematy i opisać dokładnie funkcjonalności. Mam jedynie problem że domyślam się że musi być zawarta jakaś część teoretyczna.
+i do końca nie wiem jak mógłbym to część opisać. W sensie co dokładnie mógłbym napisać. Jak działa zeroGPT? czy same systemy AWCF?
+
+
+I na koniec wsm jedno najważeniejsze pytanie.
+Czy ja muszę zrobić ten program jako model AI???
+bo tak Pan rozpisał na slacku zadania ale nie dokońca rozumiem czy jest sens robić ten program jako model.
+(Głównie chodzi mi funkcjonalność i wsm też sam dataset, którego dostanie przezemnie jest trochę ograniczone)
+
+Z poważaniem,
+Maksymilian Anzulewicz
